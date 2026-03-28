@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+    }
+    .sidebar {
+      width: 220px;
+      background: #2c3e50;
+      color: #fff;
+      height: 100vh;
+      padding: 20px;
+    }
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 15px 0;
+    }
+    .sidebar ul li a {
+      color: #fff;
+      text-decoration: none;
+    }
+    .main {
+      flex: 1;
+      background: #ecf0f1;
+      padding: 20px;
+    }
+    .topbar {
+      background: #fff;
+      padding: 10px 20px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-radius: 5px;
+    }
+    .widgets {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .widget {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .widget h3 {
+      margin-top: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Admin</h2>
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#">User Management</a></li>
+      <li><a href="#">Roles & Permissions</a></li>
+      <li><a href="#">Reports</a></li>
+      <li><a href="#">Settings</a></li>
+    </ul>
+  </div>
+  <div class="main">
+    <div class="topbar">
+      <span>Search | Notifications</span>
+      <span>Admin Profile</span>
+    </div>
+    <div class="widgets">
+      <div class="widget">
+        <h3>User Statistics</h3>
+        <p>Active: 120</p>
+        <p>Suspended: 5</p>
+        <p>New Signups: 30</p>
+      </div>
+      <div class="widget">
+        <h3>System Health</h3>
+        <p>Uptime: 99.9%</p>
+        <p>Errors: 2</p>
+      </div>
+      <div class="widget">
+        <h3>Recent Activity</h3>
+        <p>Admin John added a new user</p>
+        <p>Admin Mary updated permissions</p>
+      </div>
+      <div class="widget">
+        <h3>Quick Actions</h3>
+        <button>Add User</button>
+        <button>Generate Report</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
