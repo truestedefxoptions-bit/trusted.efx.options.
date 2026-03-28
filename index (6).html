@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Client Dashboard</title>
+  <style>
+    body { margin:0; font-family:Arial, sans-serif; display:flex; }
+    .sidebar { width:220px; background:#34495e; color:#fff; height:100vh; padding:20px; }
+    .sidebar h2 { text-align:center; margin-bottom:30px; }
+    .sidebar ul { list-style:none; padding:0; }
+    .sidebar ul li { margin:15px 0; }
+    .sidebar ul li a { color:#fff; text-decoration:none; }
+    .main { flex:1; background:#f4f6f7; padding:20px; }
+    .topbar { background:#fff; padding:10px 20px; margin-bottom:20px; display:flex; justify-content:space-between; border-radius:5px; }
+    .widgets { display:grid; grid-template-columns:repeat(2,1fr); gap:20px; }
+    .widget { background:#fff; padding:20px; border-radius:5px; box-shadow:0 2px 5px rgba(0,0,0,0.1); }
+    .widget h3 { margin-top:0; }
+    button { margin:5px; padding:8px 12px; border:none; background:#2980b9; color:#fff; border-radius:4px; cursor:pointer; }
+    button:hover { background:#1f6391; }
+  </style>
+</head>
+<body>
+  <div class="sidebar">
+    <h2>Client</h2>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">My Profile</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Orders</a></li>
+      <li><a href="#">Billing</a></li>
+      <li><a href="#">Support</a></li>
+      <li><a href="#">Settings</a></li> <!-- NEW SETTINGS LINK -->
+    </ul>
+  </div>
+  <div class="main">
+    <div class="topbar">
+      <span>Welcome, John | Notifications</span>
+      <span>Client Profile</span>
+    </div>
+    <div class="widgets">
+      <div class="widget">
+        <h3>Account Status</h3>
+        <p>Status: Active</p>
+        <p>Membership: Premium</p>
+      </div>
+      <div class="widget">
+        <h3>Recent Orders</h3>
+        <ul>
+          <li>Order #1234 – Completed</li>
+          <li>Order #1235 – Pending</li>
+          <li>Order #1236 – Shipped</li>
+        </ul>
+      </div>
+      <div class="widget">
+        <h3>Upcoming Events</h3>
+        <p>Payment due: April 5</p>
+        <p>Webinar: April 10</p>
+      </div>
+      <div class="widget">
+        <h3>Quick Links</h3>
+        <button>Update Profile</button>
+        <button>Contact Support</button>
+        <button>Make Payment</button>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
